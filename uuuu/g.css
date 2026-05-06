@@ -1,0 +1,32 @@
+
+
+
+body {
+  background: rgb(255, 253, 253);
+  overflow: hidden; /* para que no salga scroll */
+}
+
+.arcade {
+  font-family: 'Press Start 2P', monospace; /* estilo arcade */
+  color: #f3fffd;
+  font-size: 2rem;
+  white-space: nowrap;
+
+  position: absolute;
+  animation: mover 10s linear infinite;
+
+  text-shadow:
+    0 0 5px #dbb7c6,
+    0 0 10px #fffcff,
+    0 0 20px #f4ffff;
+}
+
+/* animación de izquierda a derecha */
+@keyframes mover {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 50%;
+  }
+}
